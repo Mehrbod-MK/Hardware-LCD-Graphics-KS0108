@@ -1,0 +1,35 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer                                                                         0x0260       8
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+wasBusy                                                                           R5           1
+wasLcdOn                                                                          R4           1
+wasReset                                                                          R7           1
+rx_wr_index                                                                       R6           1
+rx_rd_index                                                                       R9           1
+rx_counter                                                                        R8           1
+rx_buffer_overflow                                                                R2.0      1bit
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x0006A     35
+main                                                                              0x0008D     80
+__GLCD_SEND_PULSE                                                                 0x000DD      9
+GLCD_Display                                                                      0x000E6     19
+GLCD_SetStartLine                                                                 0x000F9     10
+GLCD_SetColumn                                                                    0x00103     28
+GLCD_SetRow                                                                       0x0011F     11
+GLCD_GoToXY                                                                       0x0012A      9
+GLCD_Write                                                                        0x00133     12
+GLCD_ClearLine                                                                    0x0013F     36
+GLCD_Clear                                                                        0x00163     16
+GLCD_Init                                                                         0x00173     12
